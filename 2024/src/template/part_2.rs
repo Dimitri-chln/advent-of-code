@@ -1,7 +1,7 @@
 use super::parse::Input;
 
-pub fn solve(mut input: Input) -> u64 {
-    todo!()
+pub fn solve(input: Input) -> u64 {
+    0
 }
 
 #[cfg(test)]
@@ -12,6 +12,6 @@ mod tests {
     fn test() {
         let input = std::fs::read_to_string("src/day_0/test.txt").unwrap();
         let input = super::super::parse::parse(&input);
-        assert_eq!(solve(input), todo!());
+        assert_eq!(solve(input), 0);
     }
 }

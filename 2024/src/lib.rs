@@ -1,7 +1,8 @@
 mod parser;
+mod utils;
 
 pub mod day_1;
+pub mod day_2;
 
-#[cfg(template)]
-#[allow(dead_code, unused_variables, unreachable_code, unused_mut)]
+#[allow(dead_code, unused_variables)]
 mod template;
