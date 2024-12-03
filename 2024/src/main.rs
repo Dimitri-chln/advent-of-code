@@ -1,6 +1,6 @@
 use std::io::Result;
 
-use advent_of_code_2024::{day_1, day_2};
+use advent_of_code_2024::{day_1, day_2, day_3};
 use clap::Parser;
 
 #[derive(Parser)]
@@ -14,6 +14,7 @@ fn main() -> Result<()> {
     let (solution_1, solution_2) = match args.day {
         1 => day_1::solve()?,
         2 => day_2::solve()?,
+        3 => day_3::solve()?,
         _ => unimplemented!(),
     };
 

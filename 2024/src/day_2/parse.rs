@@ -1,6 +1,7 @@
 use nom::{
     character::complete::{line_ending, space1},
     combinator::{all_consuming, map},
+    error::Error,
     multi::{many1, separated_list1},
     sequence::terminated,
     Parser,
@@ -40,7 +41,7 @@ impl Input {
 }
 
 pub fn parse(input: &str) -> Input {
-    let (_, result) = all_consuming::<_, _, nom::error::Error<_>, _>(map(
+    let (_, result) = all_consuming::<_, _, Error<_>, _>(map(
         many1(terminated(
             map(
                 separated_list1(space1, map(crate::parser::integer, Level)),
