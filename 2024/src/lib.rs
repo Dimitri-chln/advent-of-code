@@ -4,6 +4,7 @@ mod utils;
 pub mod day_1;
 pub mod day_2;
 pub mod day_3;
+pub mod day_4;
 
 #[allow(dead_code, unused_variables)]
 mod template;
